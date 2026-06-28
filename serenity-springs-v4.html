@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serenity Springs – Masoterapia Premium a Domicilio en Lima. Esther, masoterapista certificada. Masajes relajantes, descontracturantes, drenaje linfático, maderoterapia y más. Llama al 990-674-792.">
+    <meta name="theme-color" content="#0b1f18">
+    <meta property="og:title" content="Serenity Springs · Masoterapia Premium a Domicilio · Lima">
+    <meta property="og:description" content="Masajes profesionales a domicilio en Lima. Relajante, descontracturante, drenaje linfático, maderoterapia y más. Llama o escribe al 990-674-792.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=90">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_PE">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Serenity Springs · Masoterapia Premium a Domicilio · Lima</title>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Serenity Springs","description":"Masoterapia premium a domicilio en Lima, Perú","telephone":"+51990674792","address":{"@type":"PostalAddress","addressLocality":"Lima","addressCountry":"PE"},"openingHours":"Mo-Su 07:00-21:00","priceRange":"$$","serviceArea":{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":-12.0464,"longitude":-77.0428},"geoRadius":"30000"}}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500;600&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --deep:      #080f0d;
+            --forest:    #122b22;
+            --jade:      #1e4d3a;
+            --sage:      #2e7a5c;
+            --mist:      #84b5a4;
+            --gold:      #c49a3c;
+            --gold-lt:   #dfc07a;
+            --gold-pale: #f4e8c1;
+            --ivory:     #f5f1e8;
+            --cream:     #faf8f3;
+            --white:     #ffffff;
+            --ink:       #141a17;
+            --ash:       #536660;
+            --ease:      cubic-bezier(.4,0,.2,1);
+            --spring:    cubic-bezier(.34,1.56,.64,1);
+        }
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);line-height:1.72;overflow-x:hidden}
+        img{display:block;max-width:100%}
+
+        /* ══ NAV ══ */
+        nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:26px 60px;display:flex;align-items:center;justify-content:space-between;transition:all .55s var(--ease)}
+        nav.scrolled{background:rgba(8,15,13,.96);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);padding:16px 60px;box-shadow:0 1px 0 rgba(255,255,255,.05)}
+        .nav-brand{font-family:'Cinzel Decorative',serif;font-size:13px;letter-spacing:3px;color:var(--gold-lt);text-decoration:none}
+        .nav-links{display:flex;align-items:center;gap:36px}
+        .nav-links a{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;font-weight:400;color:rgba(245,241,232,.55);text-decoration:none;transition:color .3s;position:relative}
+        .nav-links a::after{content:'';position:absolute;left:0;bottom:-3px;width:0;height:1px;background:var(--gold);transition:width .3s var(--ease)}
+        .nav-links a:hover{color:var(--gold-lt)}
+        .nav-links a:hover::after{width:100%}
+        .nav-cta{font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:var(--deep);background:linear-gradient(135deg,var(--gold),var(--gold-lt));text-decoration:none;padding:12px 28px;border-radius:40px;transition:all .35s var(--ease);box-shadow:0 4px 16px rgba(196,154,60,.25)}
+        .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(196,154,60,.4)}
+
+        /* ══ HERO ══ */
+        .hero{position:relative;height:100dvh;min-height:720px;display:grid;place-items:center;overflow:hidden}
+        .hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&q=90') center/cover no-repeat;animation:hero-drift 25s ease-in-out infinite alternate}
+        @keyframes hero-drift{from{transform:scale(1.06) translateX(0)}to{transform:scale(1) translateX(-10px)}}
+        .hero-veil{position:absolute;inset:0;background:linear-gradient(175deg,rgba(8,15,13,.94) 0%,rgba(18,43,34,.82) 50%,rgba(30,77,58,.55) 100%)}
+        .hero-shimmer{position:absolute;inset:0;background:radial-gradient(ellipse 55% 60% at 72% 18%,rgba(196,154,60,.18) 0%,transparent 65%);animation:shimmer 10s ease-in-out infinite}
+        @keyframes shimmer{0%,100%{opacity:.4;transform:scale(1)}50%{opacity:1;transform:scale(1.05)}}
+        /* Línea dorada decorativa lateral */
+        .hero-line{position:absolute;left:60px;top:20%;bottom:20%;width:1px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);opacity:.35}
+        .hero-line-r{position:absolute;right:60px;top:20%;bottom:20%;width:1px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);opacity:.35}
+        .hero-body{position:relative;z-index:2;text-align:center;padding:0 40px;max-width:900px;margin:0 auto}
+        .hero-pre{font-size:10px;font-weight:500;letter-spacing:7px;text-transform:uppercase;color:var(--gold);margin-bottom:36px;display:flex;align-items:center;justify-content:center;gap:18px;opacity:0;animation:rise .9s .2s var(--ease) forwards}
+        .hero-pre span{display:block;width:48px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+        .hero-pre span:last-child{background:linear-gradient(90deg,var(--gold),transparent)}
+        .hero-h1{font-family:'Cormorant',serif;font-size:clamp(64px,10.5vw,118px);font-weight:300;color:var(--white);letter-spacing:10px;line-height:.98;margin-bottom:4px;opacity:0;animation:rise .9s .4s var(--ease) forwards}
+        .hero-h1 em{font-style:italic;font-weight:400;color:var(--gold-lt);display:block;letter-spacing:14px}
+        .hero-sub{font-family:'Cormorant',serif;font-size:clamp(15px,2.2vw,22px);font-style:italic;font-weight:300;color:rgba(245,241,232,.65);letter-spacing:4px;margin-bottom:32px;opacity:0;animation:rise .9s .6s var(--ease) forwards}
+        .hero-tag{font-size:14px;font-weight:300;color:rgba(245,241,232,.60);max-width:480px;margin:0 auto 60px;line-height:2.1;opacity:0;animation:rise .9s .78s var(--ease) forwards}
+        .hero-acts{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;opacity:0;animation:rise .9s .95s var(--ease) forwards}
+        @keyframes rise{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+        .btn-gold{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-lt) 100%);color:var(--deep);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;padding:17px 42px;border-radius:40px;transition:all .4s var(--ease);white-space:nowrap;box-shadow:0 8px 32px rgba(196,154,60,.3)}
+        .btn-gold:hover{transform:translateY(-3px);box-shadow:0 18px 48px rgba(196,154,60,.45)}
+        .btn-outline{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(245,241,232,.28);color:var(--ivory);text-decoration:none;font-size:11px;font-weight:300;letter-spacing:3px;text-transform:uppercase;padding:17px 42px;border-radius:40px;transition:all .4s var(--ease);white-space:nowrap}
+        .btn-outline:hover{border-color:rgba(245,241,232,.6);background:rgba(245,241,232,.05);transform:translateY(-1px)}
+        .hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;color:rgba(255,255,255,.3);font-size:9px;letter-spacing:4px;text-transform:uppercase;animation:bob 3s ease-in-out infinite}
+        .hero-scroll::after{content:'';display:block;width:1px;height:48px;background:linear-gradient(to bottom,rgba(255,255,255,.3),transparent)}
+        @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(9px)}}
+
+        /* ══ TRUST BAR ══ */
+        .trust-bar{background:var(--deep);display:flex;justify-content:center;align-items:stretch;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,.04)}
+        .trust-item{display:flex;align-items:center;gap:16px;padding:26px 48px;font-size:12.5px;color:rgba(245,241,232,.55);border-right:1px solid rgba(255,255,255,.05);cursor:default;transition:background .35s}
+        .trust-item:last-child{border-right:none}
+        .trust-item:hover{background:rgba(196,154,60,.05)}
+        .trust-icon{font-size:24px;flex-shrink:0}
+        .trust-label{font-weight:500;color:var(--ivory);display:block;font-size:13.5px;letter-spacing:.4px;margin-bottom:2px}
+
+        /* ══ SECTION HEAD ══ */
+        .section-head{text-align:center;max-width:640px;margin:0 auto 88px;padding:0 24px}
+        .eyebrow{font-size:9.5px;font-weight:600;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:22px;display:block}
+        .section-title{font-family:'Cormorant',serif;font-size:clamp(34px,5vw,54px);font-weight:400;color:var(--deep);line-height:1.15;margin-bottom:22px}
+        .section-desc{font-size:15px;color:var(--ash);line-height:1.95;font-weight:300}
+
+        /* ══ SERVICES ══ */
+        .services-section{padding:120px 0;background:var(--white)}
+        .service-row{display:grid;grid-template-columns:1fr 1fr;min-height:560px;border-top:1px solid rgba(0,0,0,.05);opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+        .service-row.visible{opacity:1;transform:translateY(0)}
+        .service-row:nth-child(even) .service-img-wrap{order:2}
+        .service-row:nth-child(even) .service-info{order:1}
+        .service-img-wrap{position:relative;overflow:hidden}
+        .service-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+        .service-row:hover .service-img-wrap img{transform:scale(1.06)}
+        .service-badge{position:absolute;top:26px;left:26px;background:linear-gradient(135deg,var(--gold),var(--gold-lt));color:var(--deep);font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;padding:7px 18px;border-radius:30px;z-index:4;box-shadow:0 4px 16px rgba(196,154,60,.3)}
+        .service-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(8,15,13,.3),transparent);pointer-events:none;transition:opacity .4s}
+        .service-row:nth-child(even) .service-img-wrap::after{background:linear-gradient(to left,rgba(8,15,13,.3),transparent)}
+        .service-row:hover .service-img-wrap::after{opacity:.5}
+        .service-info{padding:76px 72px;display:flex;flex-direction:column;justify-content:center;position:relative;background:var(--white)}
+        .service-info::before{content:'';position:absolute;right:0;top:12%;bottom:12%;width:2px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);opacity:0;transition:opacity .5s var(--ease)}
+        .service-row:nth-child(even) .service-info::before{right:auto;left:0}
+        .service-row:hover .service-info::before{opacity:1}
+        .svc-num{font-size:10px;font-weight:500;color:var(--gold);letter-spacing:4px;text-transform:uppercase;margin-bottom:18px}
+        .svc-title{font-family:'Cormorant',serif;font-size:clamp(28px,3.2vw,42px);font-weight:400;color:var(--deep);line-height:1.1;margin-bottom:20px}
+        .svc-desc{font-size:14.5px;color:var(--ash);line-height:2;margin-bottom:30px;font-weight:300}
+        .svc-features{list-style:none;margin-bottom:40px}
+        .svc-features li{font-size:13.5px;color:#445950;padding:9px 0 9px 22px;position:relative;border-bottom:1px solid rgba(0,0,0,.04)}
+        .svc-features li:first-child{border-top:1px solid rgba(0,0,0,.04)}
+        .svc-features li::before{content:'';position:absolute;left:0;top:50%;width:9px;height:1.5px;background:var(--gold);transform:translateY(-50%)}
+        .svc-link{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;font-size:10.5px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--jade);text-decoration:none;transition:all .3s var(--ease);padding-bottom:3px;border-bottom:1px solid transparent}
+        .svc-link::after{content:'→';transition:transform .3s}
+        .svc-link:hover{color:var(--gold);border-bottom-color:var(--gold)}
+        .svc-link:hover::after{transform:translateX(6px)}
+
+        /* ══ QUOTE STRIP ══ */
+        .quote-strip{background:linear-gradient(150deg,var(--deep) 0%,var(--forest) 60%,var(--jade) 100%);padding:100px 48px;text-align:center;position:relative;overflow:hidden}
+        .quote-strip::before{content:'\201C';position:absolute;top:-80px;left:50%;transform:translateX(-50%);font-family:'Cormorant',serif;font-size:360px;color:rgba(255,255,255,.025);line-height:1;pointer-events:none;user-select:none}
+        /* Orb decorativo */
+        .quote-strip::after{content:'';position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(196,154,60,.08),transparent 70%);top:-100px;right:-80px;pointer-events:none}
+        .quote-text{font-family:'Cormorant',serif;font-size:clamp(22px,3.8vw,40px);font-style:italic;font-weight:300;color:var(--ivory);max-width:760px;margin:0 auto 28px;line-height:1.6;position:relative;z-index:1}
+        .quote-author{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);position:relative;z-index:1}
+        .quote-divider{width:40px;height:1px;background:var(--gold);margin:20px auto}
+
+        /* ══ WHY ══ */
+        .why-section{padding:120px 60px;background:var(--ivory)}
+        .why-grid{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+        .why-card{background:var(--white);padding:56px 44px;position:relative;overflow:hidden;transition:all .4s var(--ease);opacity:0;transform:translateY(18px)}
+        .why-card.visible{opacity:1;transform:translateY(0)}
+        .why-card:nth-child(2){transition-delay:.13s}
+        .why-card:nth-child(3){transition-delay:.26s}
+        /* Fondo decorativo número grande */
+        .why-card::before{content:attr(data-num);position:absolute;bottom:-16px;right:16px;font-family:'Cormorant',serif;font-size:120px;font-weight:700;color:rgba(196,154,60,.06);line-height:1;pointer-events:none;user-select:none}
+        .why-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-lt));transform:scaleX(0);transition:transform .45s var(--ease);transform-origin:left}
+        .why-card:hover::after{transform:scaleX(1)}
+        .why-card:hover{box-shadow:0 16px 56px rgba(0,0,0,.07);transform:translateY(-4px)}
+        .why-card.visible:hover{transform:translateY(-4px)}
+        .why-icon{font-size:36px;margin-bottom:28px;display:block}
+        .why-title{font-family:'Cormorant',serif;font-size:24px;font-weight:500;color:var(--deep);margin-bottom:16px;line-height:1.2}
+        .why-text{font-size:14px;color:var(--ash);line-height:1.95;font-weight:300}
+
+        /* ══ CTA ══ */
+        .cta-section{background:linear-gradient(155deg,var(--forest) 0%,var(--deep) 100%);padding:120px 40px;text-align:center;position:relative;overflow:hidden}
+        .cta-orb-1{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(196,154,60,.07),transparent 70%);top:-250px;right:-120px;pointer-events:none}
+        .cta-orb-2{position:absolute;width:450px;height:450px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.03),transparent 70%);bottom:-200px;left:-80px;pointer-events:none}
+        .cta-inner{position:relative;z-index:2;max-width:720px;margin:0 auto}
+        .cta-title{font-family:'Cormorant',serif;font-size:clamp(38px,6vw,62px);font-weight:300;color:var(--white);line-height:1.18;margin-bottom:14px}
+        .cta-sub{font-size:15px;font-style:italic;color:rgba(245,241,232,.55);margin-bottom:64px;font-family:'Cormorant',serif;font-size:clamp(16px,2vw,22px)}
+        .contact-card{background:var(--white);border-radius:24px;padding:64px 56px;box-shadow:0 48px 120px rgba(0,0,0,.3);border-top:3px solid var(--gold);position:relative;overflow:hidden}
+        .contact-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-lt),var(--gold));background-size:200% 100%;animation:gold-slide 3s linear infinite}
+        @keyframes gold-slide{0%{background-position:200% 0}100%{background-position:-200% 0}}
+        .contact-card::after{content:'';position:absolute;bottom:-120px;right:-120px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(196,154,60,.05),transparent 70%);pointer-events:none}
+        .phone-wrap{position:relative;margin-bottom:42px}
+        .phone-wrap::before,.phone-wrap::after{content:'';display:block;width:32px;height:1px;background:linear-gradient(90deg,transparent,var(--gold));margin:0 auto}
+        .phone-wrap::after{background:linear-gradient(90deg,var(--gold),transparent)}
+        .contact-eyebrow{font-size:9.5px;font-weight:600;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:block}
+        .contact-name{font-family:'Cormorant',serif;font-size:32px;font-weight:500;color:var(--deep);margin-bottom:6px}
+        .contact-cert{font-size:13px;color:var(--ash);margin-bottom:40px;font-weight:300}
+        .phone-number{font-family:'Cormorant',serif;font-size:clamp(28px,7vw,58px);font-weight:300;color:var(--deep);letter-spacing:6px;margin-bottom:42px;line-height:1;text-align:center;width:100%;display:block}
+        .contact-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+        .btn-call{display:inline-flex;align-items:center;gap:10px;background:var(--forest);color:var(--white);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;padding:17px 40px;border-radius:40px;transition:all .4s var(--ease)}
+        .btn-call:hover{background:var(--deep);transform:translateY(-2px);box-shadow:0 14px 40px rgba(8,15,13,.4)}
+        .btn-wa{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:var(--white);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;padding:17px 40px;border-radius:40px;transition:all .4s var(--ease)}
+        .btn-wa:hover{background:#1dbd5a;transform:translateY(-2px);box-shadow:0 14px 40px rgba(37,211,102,.35)}
+        .schedule-note{font-size:13px;color:var(--ash);font-weight:300}
+
+        /* ══ FOOTER ══ */
+        footer{background:var(--deep);color:rgba(245,241,232,.35);text-align:center;padding:56px 24px;border-top:1px solid rgba(255,255,255,.04)}
+        .footer-brand{font-family:'Cinzel Decorative',serif;font-size:16px;letter-spacing:4px;color:var(--gold);margin-bottom:14px}
+        .footer-sep{width:32px;height:1px;background:var(--gold);margin:14px auto;opacity:.4}
+        .footer-tagline{font-family:'Cormorant',serif;font-size:16px;font-style:italic;color:rgba(245,241,232,.45);margin-bottom:10px}
+        .footer-info{font-size:11.5px;letter-spacing:.5px}
+
+        /* ══ WA FLOAT ══ */
+        .wa-float{position:fixed;bottom:32px;right:32px;z-index:950;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(37,211,102,.5);text-decoration:none;transition:all .35s var(--spring);animation:wa-pulse 3.5s ease-in-out infinite}
+        .wa-float:hover{transform:scale(1.14);box-shadow:0 14px 36px rgba(37,211,102,.6)}
+        @keyframes wa-pulse{0%,100%{box-shadow:0 8px 28px rgba(37,211,102,.5)}50%{box-shadow:0 8px 36px rgba(37,211,102,.7),0 0 0 9px rgba(37,211,102,.08)}}
+        .wa-float svg{width:30px;height:30px;fill:#fff}
+        .wa-tooltip{position:absolute;right:70px;top:50%;transform:translateY(-50%);background:rgba(8,15,13,.95);color:var(--ivory);font-size:11.5px;font-weight:400;white-space:nowrap;padding:9px 16px;border-radius:10px;pointer-events:none;opacity:0;transition:opacity .3s;letter-spacing:.5px}
+        .wa-float:hover .wa-tooltip{opacity:1}
+
+        /* ══ MUSIC WIDGET ══ */
+        .music-widget{position:fixed;bottom:104px;right:32px;z-index:950;display:flex;align-items:center;gap:14px;background:rgba(8,15,13,.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(196,154,60,.28);border-radius:50px;padding:13px 20px;box-shadow:0 20px 60px rgba(0,0,0,.4);opacity:0;transform:translateY(14px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+        .music-widget.ready{opacity:1;transform:translateY(0)}
+        .music-label{display:flex;flex-direction:column;gap:2px}
+        .music-title{font-size:12px;font-weight:500;color:var(--ivory);letter-spacing:.5px}
+        .music-sub{font-size:10px;color:var(--mist);letter-spacing:1px;display:flex;align-items:center;gap:6px}
+        .music-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;animation:blink 2s ease-in-out infinite}
+        @keyframes blink{0%,100%{opacity:1}50%{opacity:.1}}
+        .music-play-btn{width:38px;height:38px;background:linear-gradient(135deg,var(--gold),var(--gold-lt));border:none;border-radius:50%;cursor:pointer;color:var(--deep);font-size:13px;display:flex;align-items:center;justify-content:center;transition:all .3s var(--spring);flex-shrink:0}
+        .music-play-btn:hover{transform:scale(1.12)}
+        .vol-slider{-webkit-appearance:none;appearance:none;width:60px;height:3px;background:rgba(255,255,255,.12);border-radius:2px;outline:none;cursor:pointer}
+        .vol-slider::-webkit-slider-thumb{-webkit-appearance:none;width:12px;height:12px;border-radius:50%;background:var(--gold);cursor:pointer;transition:transform .2s}
+        .vol-slider::-webkit-slider-thumb:hover{transform:scale(1.2)}
+        .vis{display:flex;align-items:flex-end;gap:3px;height:18px}
+        .vis-bar{width:3px;background:linear-gradient(to top,var(--gold),var(--sage));border-radius:2px;animation:dance .8s ease-in-out infinite}
+        .vis-bar:nth-child(1){height:8px;animation-delay:0s}
+        .vis-bar:nth-child(2){height:15px;animation-delay:.1s}
+        .vis-bar:nth-child(3){height:10px;animation-delay:.2s}
+        .vis-bar:nth-child(4){height:18px;animation-delay:.3s}
+        .vis-bar:nth-child(5){height:11px;animation-delay:.4s}
+        @keyframes dance{0%,100%{transform:scaleY(.4)}50%{transform:scaleY(1)}}
+        .vis.paused .vis-bar{animation:none;transform:scaleY(.3)}
+
+        /* ══ FADE UP ══ */
+        .fade-up{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+        .fade-up.visible{opacity:1;transform:translateY(0)}
+
+        /* ══ RESPONSIVE ══ */
+        @media(max-width:1080px){
+            .why-grid{grid-template-columns:1fr}
+        }
+        @media(max-width:1024px){
+            nav{padding:18px 28px}
+            nav.scrolled{padding:13px 28px}
+            .nav-links{display:none}
+            .hero-line,.hero-line-r{display:none}
+            .service-row{grid-template-columns:1fr;min-height:auto}
+            .service-row:nth-child(even) .service-img-wrap,.service-row:nth-child(even) .service-info{order:0}
+            .service-img-wrap{height:360px}
+            .service-info{padding:52px 36px}
+        }
+        @media(max-width:768px){
+            .trust-item{padding:18px 22px}
+            .trust-item:nth-child(3),.trust-item:nth-child(4){border-right:none}
+            .service-info{padding:40px 24px}
+            .contact-card{padding:44px 24px}
+            .phone-number{font-size:clamp(32px,10vw,52px);letter-spacing:3px;text-align:center !important;width:100% !important}
+            .why-section{padding:80px 24px}
+            .music-widget{bottom:104px;right:16px;padding:11px 14px;gap:10px}
+            .vol-slider{display:none}
+            .wa-float{right:16px;bottom:28px}
+        }
+        @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}}
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+    <a href="#inicio" class="nav-brand">Serenity Springs</a>
+    <div class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+    <a href="#contacto" class="nav-cta">Reservar Cita</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-veil"></div>
+    <div class="hero-shimmer"></div>
+    <div class="hero-line"></div>
+    <div class="hero-line-r"></div>
+    <div class="hero-body">
+        <p class="hero-pre"><span></span>Masoterapia Premium · Lima, Perú<span></span></p>
+        <h1 class="hero-h1">Serenity<em>Springs</em></h1>
+        <p class="hero-sub">Masajes a Domicilio · Certificada</p>
+        <p class="hero-tag">Llevamos calma, alivio y bienestar directamente hasta donde estás. Sin traslados, sin estrés — solo la experiencia que mereces.</p>
+        <div class="hero-acts">
+            <a href="#contacto" class="btn-gold">📞 Reservar Ahora</a>
+            <a href="#servicios" class="btn-outline">Ver Servicios</a>
+        </div>
+    </div>
+    <div class="hero-scroll">Explorar</div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+    <div class="trust-item"><span class="trust-icon">🏅</span><div><span class="trust-label">Certificación Profesional</span>Técnica certificada</div></div>
+    <div class="trust-item"><span class="trust-icon">🏠</span><div><span class="trust-label">A Domicilio</span>Voy donde tú estás</div></div>
+    <div class="trust-item"><span class="trust-icon">📅</span><div><span class="trust-label">Lun – Dom</span>Horarios flexibles</div></div>
+    <div class="trust-item"><span class="trust-icon">✨</span><div><span class="trust-label">8 Tratamientos</span>Especializados</div></div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section" id="servicios">
+    <div class="section-head fade-up">
+        <span class="eyebrow">Nuestros Tratamientos</span>
+        <h2 class="section-title">Terapias diseñadas para tu bienestar integral</h2>
+        <p class="section-desc">Cada sesión es personalizada según tu cuerpo, tu ritmo y lo que necesitas sentir.</p>
+    </div>
+
+    <div class="service-row">
+        <div class="service-img-wrap"><span class="service-badge">Más Solicitado</span><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=90" alt="Masaje Relajante" loading="lazy"></div>
+        <div class="service-info">
+            <div class="svc-num">Relajación</div>
+            <h3 class="svc-title">Masaje Relajante</h3>
+            <p class="svc-desc">Técnicas suaves de masaje sueco que disuelven la tensión acumulada y restauran el equilibrio natural de tu cuerpo. Una experiencia sensorial que apaga la mente y renueva la energía.</p>
+            <ul class="svc-features"><li>Movimientos envolventes y fluidos</li><li>Aromaterapia personalizada</li><li>Reduce el estrés y la ansiedad</li><li>Mejora la calidad del sueño</li></ul>
+            <a href="#contacto" class="svc-link">Reservar esta sesión</a>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-img-wrap"><span class="service-badge">Terapéutico</span><img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=1200&q=90" alt="Masaje Descontracturante" loading="lazy"></div>
+        <div class="service-info">
+            <div class="svc-num">Terapia Muscular</div>
+            <h3 class="svc-title">Descontracturante</h3>
+            <p class="svc-desc">Tratamiento profundo especializado en liberar contracturas crónicas y puntos de tensión. Ideal para dolores de espalda, cuello y hombros causados por el estrés o las malas posturas.</p>
+            <ul class="svc-features"><li>Técnicas de tejido profundo</li><li>Liberación miofascial</li><li>Tratamiento de puntos gatillo</li><li>Mejora la movilidad articular</li></ul>
+            <a href="#contacto" class="svc-link">Reservar esta sesión</a>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-img-wrap"><span class="service-badge">Exclusivo</span><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=90" alt="Maderoterapia" loading="lazy"></div>
+        <div class="service-info">
+            <div class="svc-num">Modelación Corporal</div>
+            <h3 class="svc-title">Maderoterapia</h3>
+            <p class="svc-desc">Técnica colombiana avanzada con instrumentos ergonómicos de madera que modelan, tonifican y reactivan la circulación. Perfecta para mejorar la apariencia de la piel y reducir la celulitis.</p>
+            <ul class="svc-features"><li>15 instrumentos especializados</li><li>Modelación y contorneado corporal</li><li>Reducción de celulitis</li><li>Activa el sistema linfático</li></ul>
+            <a href="#contacto" class="svc-link">Reservar esta sesión</a>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-img-wrap"><span class="service-badge">Premium</span><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1200&q=90" alt="Piedras Calientes" loading="lazy"></div>
+        <div class="service-info">
+            <div class="svc-num">Terapia de Calor</div>
+            <h3 class="svc-title">Piedras Calientes</h3>
+            <p class="svc-desc">Terapia ancestral que combina el calor de piedras volcánicas basálticas con técnicas de masaje profundo. Una experiencia transformadora que equilibra cuerpo, mente y energía.</p>
+            <ul class="svc-features"><li>Piedras basálticas naturales</li><li>Calor terapéutico profundo</li><li>Relajación muscular intensa</li><li>Mejora la circulación sanguínea</li></ul>
+            <a href="#contacto" class="svc-link">Reservar esta sesión</a>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-img-wrap"><span class="service-badge">Modelante</span><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&q=90" alt="Masaje Reductivo" loading="lazy"></div>
+        <div class="service-info">
+            <div class="svc-num">Contorno Corporal</div>
+            <h3 class="svc-title">Reductivo</h3>
+            <p class="svc-desc">Masaje especializado de modelación corporal que ayuda a reducir medidas y mejorar el contorno de tu silueta. Técnicas específicas para activar el metabolismo y tonificar áreas localizadas.</p>
+            <ul class="svc-features"><li>Reducción de medidas visible</li><li>Activación metabólica</li><li>Tonificación y reafirmación</li><li>Mejora la textura de la piel</li></ul>
+            <a href="#contacto" class="svc-link">Reservar esta sesión</a>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-img-wrap"><span class="service-badge">Especializado</span><img src="https://images.unsplash.com/photo-1573461160327-f46b6eded1b3?w=1200&q=90" alt="Drenaje Linfático" loading="lazy"></div>
+        <div class="service-info">
+            <div class="svc-num">Desintoxicación</div>
+            <h3 class="svc-title">Drenaje Linfático</h3>
+            <p class="svc-desc">Técnica certificada especializada en eliminar toxinas, reducir retención de líquidos y desinflamar. Ideal para post-operatorios, piernas cansadas y tratamientos de desintoxicación profunda.</p>
+            <ul class="svc-features"><li>Método Vodder certificado</li><li>Eliminación de toxinas</li><li>Reduce hinchazón y retención</li><li>Fortalece el sistema inmune</li></ul>
+            <a href="#contacto" class="svc-link">Reservar esta sesión</a>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-img-wrap"><span class="service-badge">Rehabilitación</span><img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&q=90" alt="Terapia de Ultrasonido" loading="lazy"></div>
+        <div class="service-info">
+            <div class="svc-num">Fisioterapia</div>
+            <h3 class="svc-title">Terapia de Ultrasonido</h3>
+            <p class="svc-desc">Tratamiento fisioterapéutico avanzado con ondas ultrasónicas de alta frecuencia que penetran profundamente en los tejidos. Ideal para lesiones musculares, tendinitis, bursitis y recuperación deportiva.</p>
+            <ul class="svc-features"><li>Ondas ultrasónicas terapéuticas</li><li>Acelera la recuperación de lesiones</li><li>Reduce inflamación y dolor crónico</li><li>Mejora la circulación profunda</li></ul>
+            <a href="#contacto" class="svc-link">Reservar esta sesión</a>
+        </div>
+    </div>
+
+    <div class="service-row">
+        <div class="service-img-wrap"><span class="service-badge">Analgésico</span><img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1200&q=90" alt="Terapia TENS" loading="lazy"></div>
+        <div class="service-info">
+            <div class="svc-num">Electroestimulación</div>
+            <h3 class="svc-title">Terapia de TENS</h3>
+            <p class="svc-desc">Electroestimulación Nerviosa Transcutánea que alivia el dolor mediante impulsos eléctricos controlados. Tratamiento no invasivo y seguro para dolores agudos y crónicos, sin medicamentos.</p>
+            <ul class="svc-features"><li>Alivio del dolor inmediato</li><li>Sin medicamentos ni efectos secundarios</li><li>Estimula la producción de endorfinas</li><li>Ideal para dolor crónico y neuropático</li></ul>
+            <a href="#contacto" class="svc-link">Reservar esta sesión</a>
+        </div>
+    </div>
+</section>
+
+<!-- QUOTE STRIP -->
+<section class="quote-strip">
+    <p class="quote-text">Tu cuerpo te habla todo el tiempo. A veces lo que necesita es simplemente que alguien lo escuche con las manos.</p>
+    <div class="quote-divider"></div>
+    <span class="quote-author">— Esther · Serenity Springs</span>
+</section>
+
+<!-- WHY US -->
+<section class="why-section" id="nosotros">
+    <div class="section-head fade-up">
+        <span class="eyebrow">¿Por qué elegirnos?</span>
+        <h2 class="section-title">Una experiencia pensada para ti</h2>
+    </div>
+    <div class="why-grid">
+        <div class="why-card fade-up" data-num="1">
+            <span class="why-icon">🎓</span>
+            <h3 class="why-title">Certificación Profesional</h3>
+            <p class="why-text">Esther cuenta con formación certificada en masoterapia y fisioterapia. Cada técnica aplicada tiene respaldo académico y años de práctica real.</p>
+        </div>
+        <div class="why-card fade-up" data-num="2">
+            <span class="why-icon">🏠</span>
+            <h3 class="why-title">Comodidad Total</h3>
+            <p class="why-text">Olvida el tráfico y los tiempos de espera. Llevamos la camilla, los aceites y todo lo necesario directamente a tu hogar u oficina.</p>
+        </div>
+        <div class="why-card fade-up" data-num="3">
+            <span class="why-icon">🤝</span>
+            <h3 class="why-title">Trato Personalizado</h3>
+            <p class="why-text">Antes de cada sesión evaluamos tu condición y adaptamos cada técnica a lo que tu cuerpo realmente necesita en ese momento.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA / CONTACTO -->
+<section class="cta-section" id="contacto">
+    <div class="cta-orb-1"></div>
+    <div class="cta-orb-2"></div>
+    <div class="cta-inner fade-up">
+        <h2 class="cta-title">Reserva tu sesión hoy</h2>
+        <p class="cta-sub">Regálate el descanso que mereces — sin salir de casa</p>
+        <div class="contact-card">
+            <span class="contact-eyebrow">Contacto Directo</span>
+            <p class="contact-name">Esther</p>
+            <p class="contact-cert">Masoterapista Certificada · Lima, Perú</p>
+            <div class="phone-wrap">
+                <div class="phone-number">990-674-792</div>
+            </div>
+            <div class="contact-actions">
+                <a href="tel:+51990674792" class="btn-call">📞 Llamar Ahora</a>
+                <a href="https://wa.me/51990674792?text=Hola%20Esther%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20masoterapia." class="btn-wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+            </div>
+            <p class="schedule-note">⏰ Atención Lunes a Domingo · Horarios flexibles</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-brand">Serenity Springs</div>
+    <div class="footer-sep"></div>
+    <p class="footer-tagline">El bienestar llega hasta ti.</p>
+    <p class="footer-info">Masoterapia Profesional a Domicilio · Lima, Perú · © 2025</p>
+</footer>
+
+<!-- WA FLOAT BUTTON -->
+<a href="https://wa.me/51990674792?text=Hola%20Esther%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20masoterapia." class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <span class="wa-tooltip">Escríbenos ahora</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- MUSIC WIDGET -->
+<div class="music-widget" id="musicWidget">
+    <div class="music-label">
+        <span class="music-title">Música Relajante</span>
+        <span class="music-sub"><div class="music-dot"></div> Ambiente</span>
+    </div>
+    <button class="music-play-btn" id="playBtn" aria-label="Reproducir música relajante">▶</button>
+    <input type="range" class="vol-slider" id="volSlider" min="0" max="100" value="45" aria-label="Volumen">
+    <div class="vis" id="vis">
+        <div class="vis-bar"></div><div class="vis-bar"></div><div class="vis-bar"></div><div class="vis-bar"></div><div class="vis-bar"></div>
+    </div>
+</div>
+
+<div id="yt-player" style="display:none;position:absolute;width:0;height:0;"></div>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+    /* NAV */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    /* SCROLL REVEAL */
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-up, .service-row, .why-card').forEach(el => io.observe(el));
+
+    /* YOUTUBE MUSIC */
+    let ytPlayer, playing = false;
+    const widget    = document.getElementById('musicWidget');
+    const playBtn   = document.getElementById('playBtn');
+    const vis       = document.getElementById('vis');
+    const volSlider = document.getElementById('volSlider');
+
+    window.onYouTubeIframeAPIReady = () => {
+        ytPlayer = new YT.Player('yt-player', {
+            height: '1', width: '1',
+            videoId: 'lTRiuFIWV54',
+            playerVars: { autoplay: 0, controls: 0, loop: 1, playlist: 'lTRiuFIWV54', rel: 0 },
+            events: {
+                onReady: (e) => {
+                    e.target.setVolume(45);
+                    setTimeout(() => widget.classList.add('ready'), 900);
+                },
+                onStateChange: (e) => {
+                    if (e.data === YT.PlayerState.PLAYING) {
+                        playBtn.textContent = '⏸'; vis.classList.remove('paused'); playing = true;
+                    } else {
+                        playBtn.textContent = '▶'; vis.classList.add('paused'); playing = false;
+                    }
+                }
+            }
+        });
+    };
+
+    playBtn.addEventListener('click', () => {
+        if (!ytPlayer) return;
+        playing ? ytPlayer.pauseVideo() : ytPlayer.playVideo();
+    });
+
+    volSlider.addEventListener('input', () => {
+        if (ytPlayer && ytPlayer.setVolume) ytPlayer.setVolume(parseInt(volSlider.value));
+    });
+</script>
+</body>
+</html>
